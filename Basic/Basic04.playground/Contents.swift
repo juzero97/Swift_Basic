@@ -5,6 +5,10 @@ class Car{
     var model : String
     var year : Int
     
+    var details : String {
+        return "\(brand),\(model) => \(year)"
+    }
+    
     //기본생성자
     //단축키 init
     
@@ -18,6 +22,7 @@ class Car{
     func displayinfo(){
         print("Car: \(brand) \(model) and year \(year)")
     }
+    
     
     deinit{
         print("메모리에서 제거되었습니다")
